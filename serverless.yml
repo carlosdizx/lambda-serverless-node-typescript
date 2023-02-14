@@ -1,9 +1,11 @@
 service: aws-lambda-node-crud
 frameworkVersion: '3'
 
+useDotenv: true
+
 plugins:
+  - serverless-esbuild
   - serverless-offline
-  - serverless-plugin-typescript
 
 provider:
   name: aws
@@ -11,9 +13,9 @@ provider:
   region: us-east-2
 
 functions:
-  api:
-    handler: index.handler
+  create:
+    handler: src/functions/enterprise/create.handler
     events:
-      - httpApi:
-          path: /
-          method: get
+      - http:
+          method: GET
+          path: hello
