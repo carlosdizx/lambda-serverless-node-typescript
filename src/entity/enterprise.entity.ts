@@ -1,7 +1,7 @@
 import {BaseEntity, Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 
 @Entity("TBL_MTR_ENTERPRISE")
-export default class EnterpriseEntity extends BaseEntity{
+export default class Enterprise extends BaseEntity{
     @PrimaryGeneratedColumn("uuid", {name: "idEnterprise"})
     id: string;
 
