@@ -1,6 +1,10 @@
 service: aws-lambda-node-crud
 frameworkVersion: '3'
 
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
+
 provider:
   name: aws
   runtime: nodejs18.x
