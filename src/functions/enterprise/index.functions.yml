@@ -1,0 +1,12 @@
+createEnterprise:
+  handler: ${self:custom.prefix_module, 'src/functions/enterprise/'}create.handler
+  events:
+    - http:
+        method: post
+        path: enterprises
+listEnterprise:
+  handler: ${self:custom.prefix_module, 'src/functions/enterprise/'}list.handler
+  events:
+    - http:
+        method: get
+        path: enterprises

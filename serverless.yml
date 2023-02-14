@@ -18,9 +18,4 @@ provider:
   region: us-east-2
 
 functions:
-  create:
-    handler: src/functions/enterprise/create.handler
-    events:
-      - http:
-          method: GET
-          path: hello
+  - ${file(./src/functions/enterprise/index.functions.yml)}
