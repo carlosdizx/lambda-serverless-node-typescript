@@ -1,17 +1,15 @@
-
 {
   "compilerOptions": {
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "allowJs": true,
     "target": "es5",
-    "lib": ["es6", "dom"],
-    "types": ["reflect-metadata", "node"],
-    "module": "commonjs",
+    "outDir": ".build",
     "moduleResolution": "node",
-    "esModuleInterop": true,
-    "outDir": "dist",
-    "rootDir": "./src",
-    "experimentalDecorators": true,
+    "lib": ["es6", "dom"],
+    "rootDir": "./",
     "emitDecoratorMetadata": true,
-    "forceConsistentCasingInFileNames": true
+    "experimentalDecorators": true,
   },
-  "include": ["src"]
 }
