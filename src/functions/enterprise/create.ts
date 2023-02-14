@@ -5,7 +5,8 @@ export const handler: APIGatewayProxyHandler = async (event) => {
         body: JSON.stringify({
             message: 'ok',
             id: 2,
-            name: event
+            name: event.body,
+            xd: 1
         }),
     };
 }
